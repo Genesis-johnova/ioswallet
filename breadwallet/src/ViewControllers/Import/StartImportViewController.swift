@@ -9,9 +9,9 @@
 import UIKit
 import BRCore
 
-private let mainURL = "https://mona.insight.monaco-ex.org/insight-api-ozosbitt/addrs/utxo"
-private let fallbackURL = "https://mona.insight.monaco-ex.org/insight-api-ozosbitt/addrs/utxo"
-private let testnetURL = "https://testnet-mona.insight.monaco-ex.org/insight-api-ozosbitt/addrs/utxo"
+private let mainURL = "server1.ozodnsseed.online/addrs/utxo"
+private let fallbackURL = "server1.ozodnsseed.online/addrs/utxo"
+private let testnetURL = "server1.ozodnsseed.online/addrs/utxo"
 
 class StartImportViewController : UIViewController {
 
