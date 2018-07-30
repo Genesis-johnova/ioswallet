@@ -19,13 +19,13 @@ enum S {
         static func currencyButtonTitle(maxDigits: Int) -> String {
             switch maxDigits {
             case 2:
-                return "μMONA\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
+                return "μOZB\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
             case 5:
-                return "mMONA\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+                return "mOZB\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
             case 8:
-                return "MONA\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
+                return "OZB\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
             default:
-                return "mMONA\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+                return "mOZB\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
             }
         }
     }
@@ -50,7 +50,7 @@ enum S {
     }
 
     enum Scanner {
-        static let flashButtonLabel = NSLocalizedString("Scanner.flashButtonLabel", value:"Camera Flash", comment: "Scan Monacoin address camera flash toggle")
+        static let flashButtonLabel = NSLocalizedString("Scanner.flashButtonLabel", value:"Camera Flash", comment: "Scan Ozosbitt address camera flash toggle")
     }
 
     enum Send {
@@ -62,8 +62,8 @@ enum S {
         static let pasteLabel = NSLocalizedString("Send.pasteLabel", value:"Paste", comment: "Paste button label")
         static let scanLabel = NSLocalizedString("Send.scanLabel", value:"Scan", comment: "Scan button label")
         static let invalidAddressTitle = NSLocalizedString("Send.invalidAddressTitle", value:"Invalid Address", comment: "Invalid address alert title")
-        static let invalidAddressMessage = NSLocalizedString("Send.invalidAddressMessage", value:"The destination address is not a valid Monacoin address.", comment: "Invalid address alert message")
-        static let invalidAddressOnPasteboard = NSLocalizedString("Send.invalidAddressOnPasteboard", value: "Pasteboard does not contain a valid Monacoin address.", comment: "Invalid address on pasteboard message")
+        static let invalidAddressMessage = NSLocalizedString("Send.invalidAddressMessage", value:"The destination address is not a valid Ozosbitt address.", comment: "Invalid address alert message")
+        static let invalidAddressOnPasteboard = NSLocalizedString("Send.invalidAddressOnPasteboard", value: "Pasteboard does not contain a valid Ozosbitt address.", comment: "Invalid address on pasteboard message")
         static let emptyPasteboard = NSLocalizedString("Send.emptyPasteboard", value: "Pasteboard is empty", comment: "Empty pasteboard error message")
         static let cameraUnavailableTitle = NSLocalizedString("Send.cameraUnavailableTitle", value:"MonaWallet is not allowed to access the camera", comment: "Camera not allowed alert title")
         static let cameraUnavailableMessage = NSLocalizedString("Send.cameraunavailableMessage", value:"Go to Settings to allow camera access.", comment: "Camera not allowed message")
@@ -72,7 +72,7 @@ enum S {
         static let containsAddress = NSLocalizedString("Send.containsAddress", value: "The destination is your own address. You cannot send to yourself.", comment: "Warning when sending to self.")
         enum UsedAddress {
             static let title = NSLocalizedString("Send.UsedAddress.title", value: "Address Already Used", comment: "Adress already used alert title")
-            static let firstLine = NSLocalizedString("Send.UsedAddress.firstLine", value: "Monacoin addresses are intended for single use only.", comment: "Adress already used alert message - first part")
+            static let firstLine = NSLocalizedString("Send.UsedAddress.firstLine", value: "Ozosbitt addresses are intended for single use only.", comment: "Adress already used alert message - first part")
             static let secondLine = NSLocalizedString("Send.UsedAddress.secondLIne", value: "Re-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address.", comment: "Adress already used alert message - second part")
         }
         static let identityNotCertified = NSLocalizedString("Send.identityNotCertified", value: "Payee identity isn't certified.", comment: "Payee identity not certified alert title.")
@@ -101,8 +101,8 @@ enum S {
 
     enum JailbreakWarnings {
         static let title = NSLocalizedString("JailbreakWarnings.title", value:"WARNING", comment: "Jailbreak warning title")
-        static let messageWithBalance = NSLocalizedString("JailbreakWarnings.messageWithBalance", value:"DEVICE SECURITY COMPROMISED\n Any 'jailbreak' app can access MonaWallet's keychain data and steal your Monacoin! Wipe this wallet immediately and restore on a secure device.", comment: "Jailbreak warning message")
-        static let messageWithoutBalance = NSLocalizedString("JailbreakWarnings.messageWithoutBalance", value:"DEVICE SECURITY COMPROMISED\n Any 'jailbreak' app can access MonaWallet's keychain data and steal your Monacoin. Please only use MonaWallet on a non-jailbroken device.", comment: "Jailbreak warning message")
+        static let messageWithBalance = NSLocalizedString("JailbreakWarnings.messageWithBalance", value:"DEVICE SECURITY COMPROMISED\n Any 'jailbreak' app can access MonaWallet's keychain data and steal your Ozosbitt! Wipe this wallet immediately and restore on a secure device.", comment: "Jailbreak warning message")
+        static let messageWithoutBalance = NSLocalizedString("JailbreakWarnings.messageWithoutBalance", value:"DEVICE SECURITY COMPROMISED\n Any 'jailbreak' app can access MonaWallet's keychain data and steal your Ozosbitt. Please only use MonaWallet on a non-jailbroken device.", comment: "Jailbreak warning message")
         static let ignore = NSLocalizedString("JailbreakWarnings.ignore", value:"Ignore", comment: "Ignore jailbreak warning button")
         static let wipe = NSLocalizedString("JailbreakWarnings.wipe", value:"Wipe", comment: "Wipe wallet button")
         static let close = NSLocalizedString("JailbreakWarnings.close", value:"Close", comment: "Close app button")
@@ -149,7 +149,7 @@ enum S {
         static let amountHeader = NSLocalizedString("TransactionDetails.amountHeader", value:"Amount", comment: "Amount section header")
         static let emptyMessage = NSLocalizedString("TransactionDetails.emptyMessage", value:"Your transactions will appear here.", comment: "Empty transaction list message.")
         static let more = NSLocalizedString("TransactionDetails.more", value:"More...", comment: "More button title")
-        static let txHashHeader = NSLocalizedString("TransactionDetails.txHashHeader", value:"Monacoin Transaction ID", comment: "Transaction ID header")
+        static let txHashHeader = NSLocalizedString("TransactionDetails.txHashHeader", value:"Ozosbitt Transaction ID", comment: "Transaction ID header")
         static let sentAmountDescription = NSLocalizedString("TransactionDetails.sentAmountDescription", value: "Sent <b>%1@</b>", comment: "Sent $5.00")
         static let receivedAmountDescription = NSLocalizedString("TransactionDetails.receivedAmountDescription", value: "Received <b>%1@</b>", comment: "Received $5.00")
         static let movedAmountDescription = NSLocalizedString("TransactionDetails.movedAmountDescription", value: "Moved <b>%1@</b>", comment: "Moved $5.00")
@@ -172,7 +172,7 @@ enum S {
             static let touchIdTitle = NSLocalizedString("SecurityCenter.touchIdTitle", value:"Touch ID", comment: "Touch ID button title")
             static let touchIdDescription = NSLocalizedString("SecurityCenter.touchIdDescription", value:"Conveniently unlock your MonaWallet and send money up to a set limit.", comment: "Touch ID button description")
             static let paperKeyTitle = NSLocalizedString("SecurityCenter.paperKeyTitle", value:"Paper Key", comment: "Paper Key button title")
-            static let paperKeyDescription = NSLocalizedString("SecurityCenter.paperKeyDescription", value:"The only way to access your Monacoin if you lose or upgrade your phone.", comment: "Paper Key button description")
+            static let paperKeyDescription = NSLocalizedString("SecurityCenter.paperKeyDescription", value:"The only way to access your Ozosbitt if you lose or upgrade your phone.", comment: "Paper Key button description")
             static let faceIdTitle = NSLocalizedString("SecurityCenter.faceIdTitle", value:"Face ID", comment: "Face ID button title")
             static let faceIdDescription = NSLocalizedString("SecurityCenter.faceIdDescription", value:"Conveniently unlock your MonaWallet and send money up to a set limit.", comment: "Face ID button description")
         }
@@ -186,7 +186,7 @@ enum S {
         static let enterCurrent = NSLocalizedString("UpdatePin.enterCurrent", value:"Enter your current PIN.", comment: "Enter current PIN instruction")
         static let enterNew = NSLocalizedString("UpdatePin.enterNew", value:"Enter your new PIN.", comment: "Enter new PIN instruction")
         static let reEnterNew = NSLocalizedString("UpdatePin.reEnterNew", value:"Re-Enter your new PIN.", comment: "Re-Enter new PIN instruction")
-        static let caption = NSLocalizedString("UpdatePin.caption", value:"Remember this PIN. If you forget it, you won't be able to access your Monacoin.", comment: "Update PIN caption text")
+        static let caption = NSLocalizedString("UpdatePin.caption", value:"Remember this PIN. If you forget it, you won't be able to access your Ozosbitt.", comment: "Update PIN caption text")
         static let setPinErrorTitle = NSLocalizedString("UpdatePin.setPinErrorTitle", value:"Update PIN Error", comment: "Update PIN failure alert view title")
         static let setPinError = NSLocalizedString("UpdatePin.setPinError", value:"Sorry, could not update PIN.", comment: "Update PIN failure error message.")
     }
@@ -296,7 +296,7 @@ enum S {
 
     enum DefaultCurrency {
         static let rateLabel = NSLocalizedString("DefaultCurrency.rateLabel", value:"Exchange Rate", comment: "Exchange rate label")
-        static let bitcoinLabel = NSLocalizedString("DefaultCurrency.bitcoinLabel", value: "Monacoin Display Unit", comment: "Monacoin denomination picker label")
+        static let bitcoinLabel = NSLocalizedString("DefaultCurrency.bitcoinLabel", value: "Ozosbitt Display Unit", comment: "Ozosbitt denomination picker label")
     }
 
     enum SyncingView {
@@ -309,7 +309,7 @@ enum S {
         static let subheader1 = NSLocalizedString("ReScan.subheader1", value:"Estimated time", comment: "Subheader label")
         static let subheader2 = NSLocalizedString("ReScan.subheader2", value:"When to Sync?", comment: "Subheader label")
         static let body1 = NSLocalizedString("ReScan.body1", value:"20-45 minutes", comment: "extimated time")
-        static let body2 = NSLocalizedString("ReScan.body2", value:"If a transaction shows as completed on the Monacoin network but not in your MonaWallet.", comment: "Syncing explanation")
+        static let body2 = NSLocalizedString("ReScan.body2", value:"If a transaction shows as completed on the Ozosbitt network but not in your MonaWallet.", comment: "Syncing explanation")
         static let body3 = NSLocalizedString("ReScan.body3", value:"You repeatedly get an error saying your transaction was rejected.", comment: "Syncing explanation")
         static let buttonTitle = NSLocalizedString("ReScan.buttonTitle", value:"Start Sync", comment: "Start Sync button label")
         static let footer = NSLocalizedString("ReScan.footer", value:"You will not be able to send money while syncing with the blockchain.", comment: "Sync blockchain view footer")
@@ -354,7 +354,7 @@ enum S {
     }
 
     enum RequestAnAmount {
-        static let title = NSLocalizedString("RequestAnAmount.title", value:"Request an Amount", comment: "Request a specific amount of Monacoin")
+        static let title = NSLocalizedString("RequestAnAmount.title", value:"Request an Amount", comment: "Request a specific amount of Ozosbitt")
         static let noAmount = NSLocalizedString("RequestAnAmount.noAmount", value: "Please enter an amount first.", comment: "No amount entered error message.")
     }
 
@@ -374,7 +374,7 @@ enum S {
         static let support = NSLocalizedString("MenuButton.support", value:"Support", comment: "Menu button title")
         static let settings = NSLocalizedString("MenuButton.settings", value:"Settings", comment: "Menu button title")
         static let lock = NSLocalizedString("MenuButton.lock", value:"Lock Wallet", comment: "Menu button title")
-        static let buy = NSLocalizedString("MenuButton.buy", value:"Buy Monacoin", comment: "Buy monacoin title")
+        static let buy = NSLocalizedString("MenuButton.buy", value:"Buy Ozosbitt", comment: "Buy ozosbitt title")
     }
 
     enum MenuViewController {
@@ -384,7 +384,7 @@ enum S {
     enum StartViewController {
         static let createButton = NSLocalizedString("MenuViewController.createButton", value:"Create New Wallet", comment: "button label")
         static let recoverButton = NSLocalizedString("MenuViewController.recoverButton", value:"Recover Wallet", comment: "button label")
-        static let message = NSLocalizedString("StartViewController.message", value: "Let's enjoy with Monacoin!", comment: "Start view message")
+        static let message = NSLocalizedString("StartViewController.message", value: "Let's enjoy with Ozosbitt!", comment: "Start view message")
     }
 
     enum AccessibilityLabels {
@@ -442,8 +442,8 @@ enum S {
             static let requestExpired = NSLocalizedString("PaymentProtocol.Errors.requestExpired", value: "request expired", comment: "Request expired payment protocol error message")
             static let badPaymentRequest = NSLocalizedString("PaymentProtocol.Errors.badPaymentRequest", value: "Bad Payment Request", comment: "Bad Payment request alert title")
             static let smallOutputErrorTitle = NSLocalizedString("PaymentProtocol.Errors.smallOutputError", value: "Couldn't make payment", comment: "Payment too small alert title")
-            static let smallPayment = NSLocalizedString("PaymentProtocol.Errors.smallPayment", value: "Monacoin payments can't be less than %1$@.", comment: "Amount too small error message")
-            static let smallTransaction = NSLocalizedString("PaymentProtocol.Errors.smallTransaction", value: "Monacoin transaction outputs can't be less than $@.", comment: "Output too small error message.")
+            static let smallPayment = NSLocalizedString("PaymentProtocol.Errors.smallPayment", value: "Ozosbitt payments can't be less than %1$@.", comment: "Amount too small error message")
+            static let smallTransaction = NSLocalizedString("PaymentProtocol.Errors.smallTransaction", value: "Ozosbitt transaction outputs can't be less than $@.", comment: "Output too small error message.")
             static let corruptedDocument = NSLocalizedString("PaymentProtocol.Errors.corruptedDocument", value: "Unsupported or corrupted document", comment: "Error opening payment protocol file message")
         }
     }
@@ -492,7 +492,7 @@ enum S {
         static let scan = NSLocalizedString("Import.scan", value: "Scan Private Key", comment: "Scan Private key button label")
         static let title = NSLocalizedString("Import.title", value: "Import Wallet", comment: "Import Wallet screen title")
         static let importing = NSLocalizedString("Import.importing", value: "Importing Wallet", comment: "Importing wallet progress view label")
-        static let confirm = NSLocalizedString("Import.confirm", value: "Send %1$@ from this private key into your wallet? The Monacoin network will receive a fee of %2$@.", comment: "Sweep private key confirmation message")
+        static let confirm = NSLocalizedString("Import.confirm", value: "Send %1$@ from this private key into your wallet? The Ozosbitt network will receive a fee of %2$@.", comment: "Sweep private key confirmation message")
         static let checking = NSLocalizedString("Import.checking", value: "Checking private key balance...", comment: "Checking private key balance progress view text")
         static let password = NSLocalizedString("Import.password", value: "This private key is password protected.", comment: "Enter password alert view title")
         static let passwordPlaceholder = NSLocalizedString("Import.passwordPlaceholder", value: "password", comment: "password textfield placeholder")
@@ -512,7 +512,7 @@ enum S {
 
     enum BitID {
         static let title = NSLocalizedString("BitID.title", value: "BitID Authentication Request", comment: "BitID Authentication Request alert view title")
-        static let authenticationRequest = NSLocalizedString("BitID.authenticationRequest", value: "%1$@ is requesting authentication using your Monacoin wallet", comment: "<sitename> is requesting authentication using your Monacoin wallet")
+        static let authenticationRequest = NSLocalizedString("BitID.authenticationRequest", value: "%1$@ is requesting authentication using your Ozosbitt wallet", comment: "<sitename> is requesting authentication using your Ozosbitt wallet")
         static let deny = NSLocalizedString("BitID.deny", value: "Deny", comment: "Deny button label")
         static let approve = NSLocalizedString("BitID.approve", value: "Approve", comment: "Approve button label")
         static let success = NSLocalizedString("BitID.success", value: "Successfully Authenticated", comment: "BitID success alert title")
@@ -569,7 +569,7 @@ enum S {
     enum NodeSelector {
         static let manualButton = NSLocalizedString("NodeSelector.manualButton", value: "Switch to Manual Mode", comment: "Switch to manual mode button label")
         static let automaticButton = NSLocalizedString("NodeSelector.automaticButton", value: "Switch to Automatic Mode", comment: "Switch to automatic mode button label")
-        static let title = NSLocalizedString("NodeSelector.title", value: "Monacoin Nodes", comment: "Node Selector view title")
+        static let title = NSLocalizedString("NodeSelector.title", value: "Ozosbitt Nodes", comment: "Node Selector view title")
         static let nodeLabel = NSLocalizedString("NodeSelector.nodeLabel", value: "Current Primary Node", comment: "Node address label")
         static let statusLabel = NSLocalizedString("NodeSelector.statusLabel", value: "Node Connection Status", comment: "Node status label")
         static let connected = NSLocalizedString("NodeSelector.connected", value: "Connected", comment: "Node is connected label")

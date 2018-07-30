@@ -12,30 +12,30 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Monacoin Payment Request</string>
+			<string>Ozosbitt Payment Request</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>monacoin.paymentrequest</string>
+				<string>ozosbitt.paymentrequest</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Monacoin Payment</string>
+			<string>Ozosbitt Payment</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>monacoin.payment</string>
+				<string>ozosbitt.payment</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Monacoin Payment ACK</string>
+			<string>Ozosbitt Payment ACK</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>monacoin.paymentack</string>
+				<string>ozosbitt.paymentack</string>
 			</array>
 		</dict>
 	</array>
@@ -57,10 +57,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>monacoin</string>
+			<string>ozosbitt</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>monacoin</string>
+				<string>ozosbitt</string>
 			</array>
 		</dict>
 		<dict>
@@ -145,13 +145,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Monacoin Payment Request</string>
+			<string>Ozosbitt Payment Request</string>
 			<key>UTTypeIdentifier</key>
-			<string>monacoin.paymentrequest</string>
+			<string>ozosbitt.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/monacoin-paymentrequest</string>
+				<string>application/ozosbitt-paymentrequest</string>
 			</dict>
 		</dict>
 		<dict>
@@ -160,13 +160,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Monacoin Payment</string>
+			<string>Ozosbitt Payment</string>
 			<key>UTTypeIdentifier</key>
-			<string>monacoin.payment</string>
+			<string>ozosbitt.payment</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/monacoin-payment</string>
+				<string>application/ozosbitt-payment</string>
 			</dict>
 		</dict>
 		<dict>
@@ -175,13 +175,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Monacoin Payment ACK</string>
+			<string>Ozosbitt Payment ACK</string>
 			<key>UTTypeIdentifier</key>
-			<string>monacoin.paymentack</string>
+			<string>ozosbitt.paymentack</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/monacoin-paymentack</string>
+				<string>application/ozosbitt-paymentack</string>
 			</dict>
 		</dict>
 	</array>

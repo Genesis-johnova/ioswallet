@@ -61,16 +61,16 @@ struct Amount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativeFormat = format.positiveFormat.replacingCharacters(in: format.positiveFormat.range(of: "#")!, with: "-#")
-        format.currencyCode = "MONA"
+        format.currencyCode = "OZB"
 
         switch maxDigits {
-        case 2: // μMONA
+        case 2: // μOZB
             format.currencySymbol = "m\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*100000 as NSNumber
-        case 5: // mMONA
+        case 5: // mOZB
             format.currencySymbol = "\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
-        case 8: // MONA
+        case 8: // OZB
             format.currencySymbol = "\(S.Symbols.btc)\(S.Symbols.narrowSpace)"
             format.maximum = C.maxMoney/C.satoshis as NSNumber
         default:
@@ -147,16 +147,16 @@ struct DisplayAmount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativeFormat = format.positiveFormat.replacingCharacters(in: format.positiveFormat.range(of: "#")!, with: "-#")
-        format.currencyCode = "MONA"
+        format.currencyCode = "OZB"
 
         switch state.maxDigits {
-        case 2: // μMONA
+        case 2: // μOZB
             format.currencySymbol = "m\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*100000 as NSNumber
-        case 5: // mMONA
+        case 5: // mOZB
             format.currencySymbol = "\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
-        case 8: // MONA
+        case 8: // OZB
             format.currencySymbol = "\(S.Symbols.btc)\(S.Symbols.narrowSpace)"
             format.maximum = C.maxMoney/C.satoshis as NSNumber
         default:

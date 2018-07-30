@@ -14,7 +14,7 @@ class MessageUIPresenter: NSObject, Trackable {
     weak var presenter: UIViewController?
 
     func presentMailCompose(bitcoinAddress: String, image: UIImage) {
-        presentMailCompose(string: "monacoin: \(bitcoinAddress)", image: image)
+        presentMailCompose(string: "ozosbitt: \(bitcoinAddress)", image: image)
     }
 
     func presentMailCompose(bitcoinURL: String, image: UIImage) {
@@ -28,7 +28,7 @@ class MessageUIPresenter: NSObject, Trackable {
         let emailView = MFMailComposeViewController()
         emailView.setMessageBody(string, isHTML: false)
         if let data = UIImagePNGRepresentation(image) {
-            emailView.addAttachmentData(data, mimeType: "image/png", fileName: "monacoinqr.png")
+            emailView.addAttachmentData(data, mimeType: "image/png", fileName: "ozosbittqr.png")
         }
         emailView.mailComposeDelegate = self
         present(emailView)
@@ -56,7 +56,7 @@ class MessageUIPresenter: NSObject, Trackable {
     }
 
     func presentMessageCompose(address: String, image: UIImage) {
-        presentMessage(string: "monacoin: \(address)", image: image)
+        presentMessage(string: "ozosbitt: \(address)", image: image)
     }
 
     func presentMessageCompose(bitcoinURL: String, image: UIImage) {
@@ -70,7 +70,7 @@ class MessageUIPresenter: NSObject, Trackable {
         let textView = MFMessageComposeViewController()
         textView.body = string
         if let data = UIImagePNGRepresentation(image) {
-            textView.addAttachmentData(data, typeIdentifier: "public.image", filename: "monacoinqr.png")
+            textView.addAttachmentData(data, typeIdentifier: "public.image", filename: "ozosbittqr.png")
         }
         textView.messageComposeDelegate = self
         saveEvent("receive.presentMessage")

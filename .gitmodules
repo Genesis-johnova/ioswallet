@@ -4,6 +4,6 @@
 [submodule "Modules/nettle"]
 	path = Modules/nettle
 	url = https://github.com/breadwallet/nettle.git
-[submodule "Modules/monawallet-core"]
-	path = Modules/monawallet-core
-	url = https://github.com/monawallet/monawallet-core.git 
+[submodule "Modules/ozosbitt-core"]
+	path = Modules/ozowallet-core
+	url = https://github.com/novelena/ozosbitt-core

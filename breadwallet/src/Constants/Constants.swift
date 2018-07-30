@@ -31,16 +31,16 @@ struct C {
     }()
     static let animationDuration: TimeInterval = 0.3
     static let secondsInDay: TimeInterval = 86400
-    static let maxMoney: UInt64 = 105120000*100000000
+    static let maxMoney: UInt64 = 65000000*100000000
     static let satoshis: UInt64 = 100000000
     static let walletQueue = "jp.pronama.walletqueue"
-    static let btcCurrencyCode = "MONA"
+    static let btcCurrencyCode = "OZB"
     static let null = "(null)"
     static let maxMemoLength = 250
     static let feedbackEmail = "support@monawallet.net"
     static let reviewLink = "https://itunes.apple.com/app/monawallet/id1343235820?action=write-review"
     static var standardPort: Int {
-        return E.isTestnet ? 19403 : 9401
+        return E.isTestnet ? 19922 : 9922
     }
 }
 

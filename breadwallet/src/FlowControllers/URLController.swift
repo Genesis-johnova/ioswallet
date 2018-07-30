@@ -27,7 +27,7 @@ class URLController : Trackable {
         ])
 
         switch url.scheme ?? "" {
-        case "monawallet":
+        case "ozowallet":
             if let query = url.query {
                 for component in query.components(separatedBy: "&") {
                     let pair = component.components(separatedBy: "+")
@@ -62,7 +62,7 @@ class URLController : Trackable {
                 return handleBitcoinUri(uri)
             }
             return true
-        case "monacoin":
+        case "ozosbitt":
             return handleBitcoinUri(url)
         case "bitid":
             if BRBitID.isBitIDURL(url) {
@@ -77,7 +77,7 @@ class URLController : Trackable {
     private func isBitcoinUri(url: URL, uri: String?) -> URL? {
         guard let uri = uri else { return nil }
         guard let bitcoinUrl = URL(string: uri) else { return nil }
-        if (url.host == "monacoin-uri" || url.path == "/monacoin-uri") && bitcoinUrl.scheme == "monacoin" {
+        if (url.host == "ozosbitt-uri" || url.path == "/ozosbitt-uri") && bitcoinUrl.scheme == "ozosbitt" {
             return url
         } else {
             return nil

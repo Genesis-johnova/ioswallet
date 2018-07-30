@@ -39,7 +39,7 @@ class DefaultCurrencyViewController : UITableViewController, Subscriber {
     }
 
     private let bitcoinLabel = UILabel(font: .customBold(size: 14.0), color: .grayTextTint)
-    private let bitcoinSwitch = UISegmentedControl(items: ["mMONA (\(S.Symbols.bits))", "MONA (\(S.Symbols.btc))"])
+    private let bitcoinSwitch = UISegmentedControl(items: ["mOZB (\(S.Symbols.bits))", "OZB (\(S.Symbols.btc))"])
     private let rateLabel = UILabel(font: .customBody(size: 16.0), color: .darkText)
     private var header: UIView?
 
