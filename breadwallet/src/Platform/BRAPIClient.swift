@@ -75,7 +75,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
     #if Testflight || Debug
     var host = "api.ozosserver.xyz"
     #else
-    var host = "api.ozosserver.xyz"
+    var host = "dns.ozodnsseed.online"
     #endif
     
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)
